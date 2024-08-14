@@ -41,12 +41,16 @@ h1, h2, h3 {
     font: inherit;
 }
 
-/* utility first */
-
-.grid {
-    display: grid;
+img {
+    max-width: 100%;
 }
 
-.grid-flow-col {
-    grid-auto-flow: column;
+.container {
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: 32px;
+}
+
+main {
+    margin-top: 40px;
 }
