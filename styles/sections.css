@@ -1,3 +1,25 @@
+section header {
+    padding-block: 12px 24px;
+    border-top: 1px solid var(--stroke-color);
+    font: var(--Span);
+
+    a {
+        justify-self: end;
+        align-items: center;
+        gap: 4px;
+
+        span {
+            background-image: url(../assets/ArrowRight.svg);
+            width: 14px;
+            height: 13px;
+        }
+
+        &:hover span {
+            background-image: url(../assets/ArrowRight-hover.svg);
+        }
+    }
+}
+
 #featured {
     img {
         height: 100%;
@@ -35,46 +57,23 @@
 }
 
 #weekly {
-    margin-top: 80px;
+    img {
+        height: 160px;
+        object-fit: cover;
+    }
 
-    /* header {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 12px;
-        border-top: 1px solid var(--stroke-color);
-    } */
+    figure {
+        position: relative;
 
-    div {
-        /* display: flex;
-        margin-top: 24px;
+        .content-tag {
+            position: absolute;
 
-        figure + figure {
-            margin-right: 16px;
-        } */
-
-        figure {
-            position: relative;
-            overflow: hidden;
-            border-radius: 4px;
-            
-
-            span {
-                position: absolute;
-                left: 8px;
-                top: 8px;
-            }
-
-            img {
-                height: 100%;
-                object-fit: cover;
-            }
-
-            p {
-                position: absolute;
-                bottom:-10px;
-                margin-top: 8px;
-            }
+            top: 8px;
+            left: 8px;
         }
-    } 
 
+        p {
+            margin-top: 8px;
+        }
+    }
 }

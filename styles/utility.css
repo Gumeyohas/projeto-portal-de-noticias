@@ -12,7 +12,7 @@
 }
 
 .grid-cols-4 {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 292px);
 }
 
 .gap-16 {
