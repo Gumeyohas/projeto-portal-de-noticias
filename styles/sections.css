@@ -10,8 +10,8 @@ section header {
 
         span {
             background-image: url(../assets/ArrowRight.svg);
-            width: 14px;
-            height: 13px;
+            width: 16px;
+            height: 16px;
         }
 
         &:hover span {
@@ -78,6 +78,7 @@ section header {
 
         p {
             margin-top: 8px;
+            font-weight: 800;
         }
     }
 }

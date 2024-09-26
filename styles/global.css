@@ -41,10 +41,6 @@ h1, h2, h3 {
     font: inherit;
 }
 
-p {
-    color: var(--text-color-secondary);
-}
-
 img {
     max-width: 100%;
 }
@@ -77,5 +73,12 @@ main {
     text-transform: uppercase;
     letter-spacing: 0.04em;
     color: var(--text-color-primary);
-    box-shadow: 0px 4px 16px 0px rgba(2, 6, 23, 0.25);
+    box-shadow: 0px 4px 16px 0px rgba(2, 6, 23, 0.251);
 }
+
+p {
+    color: var(--text-color-secondary);
+}
+
+
+
