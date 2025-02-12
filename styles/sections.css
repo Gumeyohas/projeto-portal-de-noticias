@@ -114,3 +114,63 @@ aside {
         object-fit: cover;
     }
 }
+
+@media (width <= 23.438rem) {
+    #featured {
+        grid-auto-flow: row;
+
+        & div {
+            grid-auto-flow: row;
+        }
+
+        & img[src="assets/Image 01.png"] {
+            height: 26rem;
+        }
+
+        .card {
+            & figcaption {
+                padding: 1rem;
+                & h2.text-2xl {
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                    
+                    height: 6rem;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+                & h2.text-lg {
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                    
+                    height: 3.75rem;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+            }
+        }
+        div {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    #weekly {
+        & div {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            padding-bottom: 1.5rem;
+        }
+
+        & figure img {
+          width: 100%;  
+        }
+    }
+
+    #ai {
+        & .mobile {
+            background-color: red;
+        }
+
+    }
+}

@@ -23,3 +23,20 @@
     border-inline: none; /*remove as bordas das laterais*/
     justify-content: space-between;
 }
+
+@media (width <= 23.438rem) {
+    .container {
+        padding-inline: 1rem;
+    }
+
+    #primary {
+        padding-block: 1rem;
+    }
+
+    #secondary {
+        grid-auto-flow: row;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}

@@ -26,6 +26,7 @@ body {
     font-family: var(--font-family);
     color: var(--text-color-primary);
     background-color: var(--bg-color);
+    width: 100%;
 }
 
 a {
@@ -80,5 +81,21 @@ p {
     color: var(--text-color-secondary);
 }
 
+@media (width <= 23.438rem) {
+    .desktop-only {
+        display: none;
+    }
 
+    main {
+        grid-template-columns: 1fr;
+
+        grid-template-areas: 
+        "featured"
+        "weekly"
+        "ai"
+        "aside";
+
+        row-gap: 2rem;
+    }
+}
 
