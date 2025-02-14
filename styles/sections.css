@@ -92,7 +92,7 @@ section header {
 
     article div img {
         width: 176px;
-         aspect-ratio: 1/1; /* faz a imagem ficar quadrada */
+        aspect-ratio: 1/1; /* faz a imagem ficar quadrada */
         object-fit: cover;
     }
 }
@@ -168,9 +168,44 @@ aside {
     }
 
     #ai {
-        & .mobile {
-            background-color: red;
+        & article div:nth-child(2) {
+            order: -1;
         }
 
+        & article div p {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            
+            
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        & article div h3 {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            
+            
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        & article div img {
+            width: 5rem;
+        }
+    }
+
+    #more {
+        & article div h3 {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            
+            
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
     }
 }
